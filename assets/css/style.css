@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('../fonts/digital-7_mono-webfont.woff2') format('woff2'),
+    url('../fonts/digital-7_mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Bahiana, sans-serif;
+    font-size: 1.4em;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8ffe8+0,e3f5ab+33,b7df2d+100;Green+3D+%234 */
+    background: #f8ffe8; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #f8ffe8 0%, #e3f5ab 33%, #b7df2d 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #f8ffe8 0%, #e3f5ab 33%, #b7df2d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #f8ffe8 0%, #e3f5ab 33%, #b7df2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    /* Make all elements non-selectable */
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+h1,
+h2,
+button {
+    text-transform: uppercase;
+    text-align: center;
+    color: #492020;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 10px;
+}
+
+#game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 460px;
+    margin-bottom: 70px;
+    -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+#sound {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+#sound:not(.enabled) {
+    color: #666;
+}
+
+svg {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid black;
+}
+
+#overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    top: 70px;
+    left: 150px;
+    border: 5px solid #b7df2d;
+    background-color: #EBF590;
+
+    -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+#overlayHeadline {
+    margin: 20px auto 5px;
+}
+
+#overlayText {
+    font-family: Dosis, sans-serif;
+    margin: auto 15px;
+    text-align: center;
+}
+
+button {
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 5px 30px;
+    background-color: #b7df2d;
+    border: 3px solid #b7df2d;
+    font-family: inherit;
+    font-size: 1.4em;
+}
+
+button:hover {
+    color: #f8ffe8;
+}
+
+#shutter {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#statusbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: digital-7_monomono, arial, sans-serif;
+    background-color: #000;
+    color: #FFF;
+    font-size: 1.05em;
+    border: 5px solid #000;
+}
+
+#statusbar div {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+#focus {
+    margin-right: 15px;
+    visibility: hidden;
+    display: flex;
+    background-color: #FFF;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+}
+
+#levelCounter,
+#shotCounter {
+    width: 120px;
+}
+
+#errorCounter {
+    width: 130px
+}
+
+#target {
+    width: 160px;
+}

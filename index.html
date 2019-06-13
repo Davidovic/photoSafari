@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHOTO SAFARI</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahiana|Dosis">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</head>
+<body>
+<main>
+    <h1 id="title">Photo safari</h1>
+
+    <div id="game">
+
+        <i id="sound" class="fa fa-music enabled" aria-hidden="true"></i>
+
+        <div id="shutter"></div>
+
+        <svg id="svg">
+            <g id="background"></g>
+            <g id="animal"></g>
+            <g id="foreground"></g>
+            <g id="viewfinder"></g>
+        </svg>
+
+        <div id="overlay">
+            <h2 id="overlayHeadline"></h2>
+            <div id="overlayText"></div>
+            <button id="overlayButton"></button>
+        </div>
+
+        <div id="statusbar">
+            <div id="focus"></div>
+            <div id="shotCounter">shots:<span>0/1</span></div>
+            <div id="errorCounter">errors:<span>0/3</span></div>
+            <div id="levelCounter">level:<span>1/9</span></div>
+            <div id="target">target:<span>_</span></div>
+        </div>
+
+    </div>
+
+</main>
+
+<!-- Couldn't get CreateJS working with RequireJS, so here it is: -->
+<script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script></head>
+
+<!-- RequireJS for all the rest -->
+<script data-main="assets/js/main" src="assets/js/lib/require.js"></script>
+</body>
+</html>

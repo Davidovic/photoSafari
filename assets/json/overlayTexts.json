@@ -1,0 +1,22 @@
+{
+  "start": {
+    "headline": "Welcome!",
+    "text": "Congrulations! You got a job as a wildlife photographer. Your first assignment is to photograph only one animal. Good luck!",
+    "buttonText": "Let's go!"
+  },
+  "nextLevel": {
+    "headline": "Well done!",
+    "text": "There's another assignment for you. One more animal this time.",
+    "buttonText": "Let's go!"
+  },
+  "gameFinished": {
+    "headline": "Finished!",
+    "text": "You've completed all the assigments!",
+    "buttonText": "Restart!"
+  },
+  "gameOver": {
+    "headline": "You're fired!",
+    "text": "That didn't go very well, did it? You'd better stay focused next time.",
+    "buttonText": "Try again"
+  }
+}

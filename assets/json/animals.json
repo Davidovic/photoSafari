@@ -1,0 +1,65 @@
+[
+  {
+    "name": "lion",
+    "path": "assets/svg/animals/lion.svg",
+    "width": 60,
+    "translateY": 150,
+    "scale": 1.5
+  },
+  {
+    "name": "tiger",
+    "path": "assets/svg/animals/tiger.svg",
+    "width": 50,
+    "translateY": 150,
+    "scale": 1.9
+  },
+  {
+    "name": "giraffe",
+    "path": "assets/svg/animals/giraffe.svg",
+    "width": 115,
+    "translateY": 250,
+    "scale": 1.5
+  },
+  {
+    "name": "leopard",
+    "path": "assets/svg/animals/leopard.svg",
+    "width": 60,
+    "translateY": 160,
+    "scale": 1.6
+  },
+  {
+    "name": "rhino",
+    "path": "assets/svg/animals/rhino.svg",
+    "width": 75,
+    "translateY": 140,
+    "scale": 1.9
+  },
+  {
+    "name": "snake",
+    "path": "assets/svg/animals/snake.svg",
+    "width": 50,
+    "translateY": 140,
+    "scale": 1.5
+  },
+  {
+    "name": "hippo",
+    "path": "assets/svg/animals/hippo.svg",
+    "width": 50,
+    "translateY": 130,
+    "scale": 1.9
+  },
+  {
+    "name": "elephant",
+    "path": "assets/svg/animals/elephant.svg",
+    "width": 95,
+    "translateY": 160,
+    "scale": 1.9
+  },
+  {
+    "name": "zebra",
+    "path": "assets/svg/animals/zebra.svg",
+    "width": 70,
+    "translateY": 160,
+    "scale": 1.9
+  }
+]
